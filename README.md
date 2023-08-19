@@ -30,3 +30,8 @@ Output layer: The final dense layer has 43 neurons and a SoftMax activation func
 • **Loss function**: The model was compiled with categorical cross-entropy loss function. This is a common loss function used in classification tasks that penalizes the model for making incorrect predictions.
 
 • **Optimizer**: The Adam optimizer was used to minimize the loss of function. Adam is an adaptive learning rate optimization algorithm that is widely used in deep learning.
+
+Overall, this architecture and configuration were chosen based on previous work in traffic sign classification and proved to be effective in achieving high accuracy on this dataset.
+## **Model Training with Limited Data**
+To evaluate the model's performance with a small amount of data, we trained it for 15 epochs with a batch size of 32 and a learning rate of 0.001. While this resulted in overfitting due to the limited dataset, it allowed us to evaluate the model using the accuracy metric and gain insights into its potential performance with more data. During training, we used the Learning Rate Scheduler callback function to adjust the learning rate. This can be seen from the accuracy and loss plots shown below:
+![overfitting small data](https://github.com/YoussefSultan1/Image-Classification-in-Self-Driving-Cars/assets/99561989/f3d21658-39ee-44f9-af3a-be3f7b97c775)
