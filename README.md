@@ -34,4 +34,15 @@ Output layer: The final dense layer has 43 neurons and a SoftMax activation func
 Overall, this architecture and configuration were chosen based on previous work in traffic sign classification and proved to be effective in achieving high accuracy on this dataset.
 ## **Model Training with Limited Data**
 To evaluate the model's performance with a small amount of data, we trained it for 15 epochs with a batch size of 32 and a learning rate of 0.001. While this resulted in overfitting due to the limited dataset, it allowed us to evaluate the model using the accuracy metric and gain insights into its potential performance with more data. During training, we used the Learning Rate Scheduler callback function to adjust the learning rate. This can be seen from the accuracy and loss plots shown below:
+
 ![overfitting small data](https://github.com/YoussefSultan1/Image-Classification-in-Self-Driving-Cars/assets/99561989/f3d21658-39ee-44f9-af3a-be3f7b97c775)
+
+
+## **Hyperparameters Tuning**
+Hyperparameters are the configuration settings of a machine learning algorithm that cannot be learned from data during the training process. They must be set prior to training and can significantly impact the performance of the resulting model.
+In our code, hyperparameter tuning is achieved by exploring the effect of different filter sizes in convolutional layers. A set of models are trained using different filter sizes, and the performance of each model is evaluated to determine the optimal filter size. This process allows us to find the best configuration of hyperparameters that results in the highest model accuracy. The following hyperparameters were used for training the model:
+• Learning rate: 1e-3
+• Learning rate decay: 0.95
+• Number of epochs: 15
+• Optimizer: Adam
+• Loss function: Categorical cross-entropy
