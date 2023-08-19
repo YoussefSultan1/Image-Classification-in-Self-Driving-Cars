@@ -9,7 +9,7 @@ Image classification is a fundamental task in the field of computer vision, serv
 
 The project's core objective is the practical implementation of an image classification model using convolutional neural networks (CNNs) to categorize traffic signs – an integral application within the self-driving car domain. The chosen dataset comprises preprocessed RGB images of traffic signs across 43 distinct classes. The primary aim is to train a CNN model capable of effectively classifying traffic sign images. This is realized through the development and training of the CNN model via Keras, followed by an evaluative process employing the accuracy metric. The outcomes of this evaluation offer insights into the efficacy of the adopted approach.
 
-## **Data Set**
+## **DataSet**
 The dataset used in this project consisted of preprocessed RGB images of traffic signs belonging to 43 different classes. It included over 50,000 images for training and over 12,000 images for testing. The images were taken from real-world traffic scenarios and were preprocessed to ensure that the signs were centered and normalized in size. This dataset is widely used in the field of computer vision and has been used as a benchmark for evaluating the performance of various image classification models.
 
 ![training data](https://github.com/YoussefSultan1/Image-Classification-in-Self-Driving-Cars/assets/99561989/5fac1931-2e0f-48d7-b117-b86fbf3ef842)
