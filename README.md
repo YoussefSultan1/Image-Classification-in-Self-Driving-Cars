@@ -77,19 +77,22 @@ Therefore, based on the results, it seems reasonable to select the model with fi
 Our model successfully classified the test set example, which indicates that it can accurately predict the class of a given traffic sign image. The training accuracy shows that the model performs well for most of the classes, with only a few classes having lower accuracy, such as "Speed limit (20km/h)" and "Speed limit (30km/h)". We also observed that the model performs better for some classes than others, such as "No vehicles" and "Priority Road", which have high accuracy.
 
 ## **Analysis**
-(1, 32, 32, 3)
-[3]
-![ex](https://github.com/YoussefSultan1/Image-Classification-in-Self-Driving-Cars/assets/99561989/581bf7f4-8e3c-4e9e-a85e-1ad4f650e50b)
-1/1 [==============================] - 0s 44ms/step
-(43,)
-ClassId: 3
-Label: Speed limit (60km/h)
 The first line of output, (1, 32, 32, 3), indicates the shape of the input image. The image has dimensions of 32x32 pixels and has 3 color channels (RGB).
 The first dimension of 1 indicates that there is only one image being inputted.
 The second line of output indicates the true label (or class) of the input image. In this case, the true label is class ID 3, which corresponds to the "Speed limit (60km/h)" traffic sign.
 The third line of output, (43,), indicates the shape of the output from the model's forward pass. The model predicts the probability scores for each of the 43 possible classes in the dataset.
 The fourth line of output classID: 3, indicates the class ID that the model predicted for the input image. In this case, the model predicted that the input image belongs to class 3, which is the correct class.
 The fifth line of output, Label: Speed limit (60km/h), indicates the human-readable label corresponding to the predicted class ID. This is the label that we would see on the actual traffic sign in the real world
+
+(1, 32, 32, 3)
+[3]
+
+![ex](https://github.com/YoussefSultan1/Image-Classification-in-Self-Driving-Cars/assets/99561989/581bf7f4-8e3c-4e9e-a85e-1ad4f650e50b)
+
+1/1 [==============================] - 0s 44ms/step
+(43,)
+ClassId: 3
+Label: Speed limit (60km/h)
 
 ## **Conclusion and future work**
 In this project, we built and trained a CNN model using Keras to classify traffic signs. The model achieved a high accuracy on the test set but showed signs of overfitting during training. Further improvements could be made to the model by collecting more datasets to make the car able to classify more objects or applying regularization techniques.
