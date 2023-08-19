@@ -1,5 +1,5 @@
 # Image-Classification-in-Self-Driving-Cars
-# _**Here's a brief overview of what code is doing:**_ ⬇
+# _**Convolutional Neural Network (CNN) model using Keras**_ ⬇
 
 ---
 
