@@ -17,10 +17,16 @@ The data was loaded from a binary pickle file and stored in a dictionary named "
 
 ## **Main Model Architecture and Configuration**
 • **Convolutional layer**: The model uses a convolutional layer with 32 filters of size 3x3. This layer applies the filters to the input image to extract features from it.
+
 • **Max-pooling layer**: A max-pooling layer of size 2 follows the convolutional layer. This layer reduces the dimensionality of the features while preserving the most essential information.
+
 • **Flattening layer**: The output of the max-pooling layer is flattened to create a one-dimensional vector that can be used as input to a dense layer.
+
 • **Dense layer**: The model has a dense layer with 500 neurons and a Relu activation function. This layer takes the flattened vector as input and applies a set of weights to it to produce an intermediate representation of the input.
 Output layer: The final dense layer has 43 neurons and a SoftMax activation function. This layer produces the probability distribution over the 43 classes of traffic signs.
-**Code Output**: some examples of the training data.
+
+• **Code Output**: some examples of the training data.
+
 • **Loss function**: The model was compiled with categorical cross-entropy loss function. This is a common loss function used in classification tasks that penalizes the model for making incorrect predictions.
+
 • **Optimizer**: The Adam optimizer was used to minimize the loss of function. Adam is an adaptive learning rate optimization algorithm that is widely used in deep learning.
