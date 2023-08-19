@@ -85,13 +85,17 @@ The fourth line of output classID: 3, indicates the class ID that the model pred
 The fifth line of output, Label: Speed limit (60km/h), indicates the human-readable label corresponding to the predicted class ID. This is the label that we would see on the actual traffic sign in the real world
 
 (1, 32, 32, 3)
+
 [3]
 
 ![ex](https://github.com/YoussefSultan1/Image-Classification-in-Self-Driving-Cars/assets/99561989/581bf7f4-8e3c-4e9e-a85e-1ad4f650e50b)
 
 1/1 [==============================] - 0s 44ms/step
+
 (43,)
+
 ClassId: 3
+
 Label: Speed limit (60km/h)
 
 ## **Conclusion and future work**
